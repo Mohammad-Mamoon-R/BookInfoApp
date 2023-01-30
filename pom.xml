@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.rtb</groupId>
     <artifactId>ratings-service</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>ratings-service</name>
     <description>Demo project for book ratings service</description>
     <properties>
