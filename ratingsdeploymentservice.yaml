@@ -51,6 +51,7 @@ spec:
 kind: Service
 apiVersion: v1
 metadata:
+  namespace: rtb
   name: ratings-service-svc
 spec:
   selector:
