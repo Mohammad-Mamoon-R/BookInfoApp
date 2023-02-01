@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: ratings-service-app
-          image: mamoonroshangar/ratings-service-0.0.1:latest
+          image: mamoonroshangar/ratings-service-0.0.1:0.0.1
           imagePullPolicy: Always
           ports:
             - containerPort: 9001
@@ -51,6 +51,7 @@ spec:
 kind: Service
 apiVersion: v1
 metadata:
+  namespace: rtb
   name: ratings-service-svc
 spec:
   selector:
