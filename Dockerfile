@@ -1,4 +1,5 @@
 FROM openjdk:11
 EXPOSE 9001
-ADD target/ratings-service-0.0.1.jar ratings-service-0.0.1.jar
-ENTRYPOINT ["java","-jar","/ratings-service-0.0.1.jar"]
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} ratings-service.jar
+ENTRYPOINT ["java","-jar","/ratings-service.jar"]

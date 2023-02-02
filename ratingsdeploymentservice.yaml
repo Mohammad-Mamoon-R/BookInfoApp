@@ -17,11 +17,11 @@ spec:
     spec:
       containers:
         - name: ratings-service-app
-          image: mamoonroshangar/ratings-service-0.0.1:latest
+          image: mamoonroshangar/ratings-service:0.0.1
           imagePullPolicy: Always
           ports:
             - containerPort: 9001
-          env: # Setting Enviornmental Variables
+          env: # Setting Environmental Variables
             - name: DB_HOST   # Setting Database host address from configMap
               valueFrom:
                 configMapKeyRef:
