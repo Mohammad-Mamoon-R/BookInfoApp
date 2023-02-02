@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: ratings-service-app
-          image: mamoonroshangar/ratings-service:0.0.1
+          image: mamoonroshangar/ratings-service:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 9001
