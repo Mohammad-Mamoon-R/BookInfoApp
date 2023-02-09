@@ -21,13 +21,12 @@ spring:
 
 eureka:
   instance:
-    preferIpAddress: true
-    hostname: eureka-0
+    hostname: "${HOSTNAME}.eureka"
   client:
-    registerWithEureka: true
-    fetchRegistry: true
+    register-with-eureka: true
+    fetch-registry: true
     serviceUrl:
-      defaultZone: http://eureka-0.eureka.rtb.svc.cluster.local:8761/eureka
+      defaultZone: ${EUREKA_SERVER_ADDRESS}
 
 
 
